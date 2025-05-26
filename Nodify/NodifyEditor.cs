@@ -1088,7 +1088,7 @@ namespace Nodify
         public void FitToScreen(Rect? area = null)
         {
             Rect extent = area ?? ItemsExtent;
-            extent.Inflate(FitToScreenExtentMargin);
+            extent = extent.Inflate(FitToScreenExtentMargin);
 
             if (extent.Width > 0 && extent.Height > 0)
             {
